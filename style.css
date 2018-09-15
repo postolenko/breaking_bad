@@ -1242,10 +1242,6 @@ h2.h2_bg_2 {
     background-image: url(img/bg_3.jpg);
 }
 
-.h2_wrapp h2 {
-    /*padding: 13px 0 17px 0;*/
-}
-
 .h2_wrapp.light h2 {
     color: #ffffff;
 }
@@ -1274,7 +1270,13 @@ h2.h2_bg_3 {
 /*-- Section 4 - Main Page --*/
 
 .sect-4 {
-    padding: 15px 0 0 0;
+    padding: 15px 0 1px 0;
+}
+
+.cat_shape {
+    position: absolute;
+    top: -111px;
+    right: 127px;
 }
 
 .thumbnails_1 {
@@ -1624,6 +1626,33 @@ p.date {
 
 /*-- /Section 6 - Main Page --*/
 
+/*-- Section 3 - Main Page 2 --*/
+
+.sect-6_2 {
+    padding: 12px 0 30px 0;
+}
+
+.bg_6 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/bg_6.jpg);
+}
+
+.sect-4_2 {
+    padding-bottom: 20px;
+}
+
+.btn_wrapp_2 {
+
+}
+
+.btn_wrapp_2 .transparent_btn {
+    margin: 7px 0 35px 0;
+}
+
+/*-- /Section 3 - Main Page 2 --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
@@ -1659,6 +1688,10 @@ p.date {
     position: fixed;
     bottom: 151px;
     left: 0;
+}
+
+.scrolltop_wrapp .row {
+    height: 0;
 }
 
 .scroll-top {
