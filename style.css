@@ -114,6 +114,7 @@ body {
 header {
     order: 1;
     -webkit-order: 1;
+    z-index: 2;
 }
 
 .content {
@@ -436,6 +437,16 @@ textarea:focus {
     background-size: contain;
 }
 
+.home {
+    display: block;
+    width: 21px;
+    height: 18px;
+    background-image: url(img/home_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 /*-- /Icons --*/
 
 /*-- Buttons --*/
@@ -724,12 +735,66 @@ textarea:focus {
 
 /*-- /Owl --*/
 
+/*-- Breadcrumbs --*/
+
+.breadcrumbs_wrapp {
+    padding: 22px 0 3px 0;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.breadcrumbs li:after {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 5px;
+    height: 13px;
+    margin: 0 6px 0 11px;
+    position: relative;
+    top: 6px;
+    background-image: url(img/slash.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.breadcrumbs li:last-child:after {
+    display: none;
+}
+
+.breadcrumbs li a {
+    display: inline;
+    padding: 2px 5px;
+    color: #383439;
+    font-weight: 500;
+}
+
+.breadcrumbs li a .home {
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    top: 2px;
+    margin: 0 10px 0 0;
+}
+
+.breadcrumbs li:last-child a {
+    background-color: #fdd994;
+}
+
+/*-- /Breadcrumbs --*/
+
 /*-------------------------------------------*/
 /* ----- HEADER ------ */
 /*-------------------------------------------*/
 
 .header-site {
     background-color: #ffffff;
+    -webkit-box-shadow: 0 0 60px 0 rgba(56, 52, 57, .14);
+    -moz-box-shadow: 0 0 60px 0 rgba(56, 52, 57, .14);
+    box-shadow: 0 0 60px 0 rgba(56, 52, 57, .14);
 }
 
 .header-site .col-1 {
@@ -1643,15 +1708,142 @@ p.date {
     padding-bottom: 20px;
 }
 
-.btn_wrapp_2 {
-
-}
-
 .btn_wrapp_2 .transparent_btn {
     margin: 7px 0 35px 0;
 }
 
 /*-- /Section 3 - Main Page 2 --*/
+
+/*-- Section 1 - Cats Page --*/
+
+.cats-thumbs {
+    margin: 0 -1.5%;
+}
+
+.cats-thumbs .cat-thumb {
+    margin: 15px 1.5%;
+    width: 22%;
+}
+
+.pagination {
+    text-align: center;
+    margin: 4px 0 32px 0;
+}
+
+.pagination li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+.pagination li a {
+    display: inline-block;
+    vertical-align: top;
+    height: 47px;
+    min-width: 47px;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #383439;
+    background-image: -moz-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: all;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+    -ms-transition-property: all;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+    -o-transition-property: all;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pagination li a:link,
+.pagination li a:visited {
+    box-shadow: none;
+}
+
+.pagination li a:active,
+.pagination li a.active {
+    -webkit-box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+    -moz-box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+    box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+}
+
+.pagination li a:hover {
+    -webkit-box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+    -moz-box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+    box-shadow: 0 5px 15px 0 rgba(56, 52, 57, .4);
+}
+
+.arrow-prev {
+    display: inline-block;
+    vertical-align: top;
+    height: 47px;
+    min-width: 47px;
+    position: relative;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: -moz-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+}
+
+.arrow-prev:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 12px 15px;
+    background-image: url(img/arrows.png);
+    background-repeat: no-repeat;
+}
+
+.arrow-next {
+    display: inline-block;
+    vertical-align: top;
+    height: 47px;
+    min-width: 47px;
+    position: relative;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: -moz-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(255,218,147) 0%, rgb(255,235,198) 100%);
+}
+
+.arrow-next:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: -34px 15px;
+    background-image: url(img/arrows.png);
+    background-repeat: no-repeat;
+}
+
+/*-- /Section 1 - Cats Page --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
