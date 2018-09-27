@@ -63,5 +63,25 @@ $(document).ready(function() {
         }
     });
 
+    $('.big_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        dots: true,
+        asNavFor: '.miniature_slider'
+    });
+
+    $('.miniature_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        asNavFor: '.big_slider',        
+        vertical: true,
+        verticalSwiping: true,
+        focusOnSelect: true
+    });
+
 });
 

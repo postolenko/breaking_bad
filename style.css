@@ -28,6 +28,7 @@
     font-style: normal;
 }
 
+
 @font-face {
     font-family: "SF UI Display";
     src: url("fonts/SFUIDisplay-Bold.eot");
@@ -122,6 +123,13 @@ header {
     -webkit-order: 2;
     flex-grow: 1;
     -webkit-flex-grow: 1;
+}
+
+.content.inner_page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/bg_2.jpg);
 }
 
 footer {
@@ -1849,7 +1857,317 @@ p.date {
 
 /*-- /Section 1 - Gatitos Vendidos Page --*/
 
+/*-- Section 1 - Kittens --*/
 
+.two-cols_templ_2 {
+    margin: 2px 0;
+}
+
+.two-cols_templ_2 > .left {
+    width: 58%;
+    padding: 10px 15px 10px 0;
+}
+
+.two-cols_templ_2 > .right {
+    width: 42%;
+    padding: 19px 0 10px 15px;
+}
+
+.cats_slider_wrapp {
+
+}
+
+.cats_slider_wrapp > .left {
+    width: 173px;
+}
+
+.cats_slider_wrapp > .right {
+    padding: 0;
+    width: calc(100% - 173px);
+}
+
+.miniature_slider {
+    width: 159px;
+    height: 390px;
+}
+
+.miniature_slider .slide {
+    margin: 9px 0;
+    cursor: pointer;
+    outline: 1px solid transparent;
+}
+
+.miniature_slider .slide .img-box {
+    height: 111px;
+    overflow: hidden;
+    position: relative;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 17px 0 rgba(56, 52, 57, .2);
+    -moz-box-shadow: 0 0 17px 0 rgba(56, 52, 57, .2);
+    box-shadow: 0 0 17px 0 rgba(56, 52, 57, .2);
+}
+
+.miniature_slider .slide .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.big_slider {
+    margin: 10px 0;
+    -webkit-box-shadow: 0 0 30px 0 rgba(56, 52, 57, .3);
+    -moz-box-shadow: 0 0 30px 0 rgba(56, 52, 57, .3);
+    box-shadow: 0 0 30px 0 rgba(56, 52, 57, .3);
+}
+
+.big_slider .slide {
+    outline: 1px solid transparent;
+}
+
+.big_slider .img-box {
+    height: 373px;
+    overflow: hidden;
+    position: relative;
+    border-width: 5px;
+    border-color: rgb(255, 255, 255);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);    
+}
+
+.big_slider .img-box img {
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/*-- Slick --*/
+
+.slick-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    background-image: url(img/slick_arrows.png);
+    background-repeat: no-repeat;
+}
+
+.slick-prev {
+    background-position: -6px -4px;
+}
+
+.slick-next {
+    background-position: -69px -5px;
+}
+
+.slick-prev:hover {
+    background-position: -6px -50px;
+}
+
+.slick-next:hover {
+    background-position: -69px -51px;
+}
+
+.big_slider .slick-arrow {
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.big_slider .slick-prev {
+    left: 20px;
+}
+
+.big_slider .slick-next {
+    right: 20px;
+}
+
+.slick-dots {
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 16px;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #383439;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background: #ffdb95;
+}
+
+.slick-dots li button:hover {
+    background: #ffdb95;
+}
+
+/*-- /Slick --*/
+
+.two-cols_templ {
+    margin: 0 0 78px 0;
+}
+
+.two-cols_templ h3 {
+    padding-bottom: 13px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #383439;
+}
+
+.desc_item {
+    padding: 8px 0;
+}
+
+.desc_item .col {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.desc_item .col:nth-child(1) {
+    margin: 0 5px 0 0;
+}
+
+.desc_item h3 {
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #d1ad69;
+}
+
+.desc_item p {
+    padding: 1px 0 0 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #383439;
+}
+
+.tags {
+    margin: -3px 0 -3px 15px;
+}
+
+p.tag {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 130px;
+    text-align: center;
+    margin: 3px;
+    padding: 0 13px;
+    border-width: 2px;
+    border-color: rgb(252, 208, 122);
+    border-style: solid;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #383439;
+}
+
+p.price_2 {
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #383439;
+}
+
+.two-cols_templ_2 .right .yellow_btn {
+    margin: 10px 0;
+}
+
+.dropdown-box {
+    margin: 4px 0;
+    border-top: 1px solid #fcd07a;
+    border-bottom: 1px solid #fcd07a;
+}
+
+.dropdown-title {
+    padding: 13px 30px 15px 0;
+    position: relative;
+}
+
+.dropdown-btn {
+    display: block;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url(img/arrow_slide.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.dropdown-box.hide .dropdown-btn {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.dropdown-title .dropdown-btn {
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.dropdown-title h3 {
+    padding: 0;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.dropdown_content {
+    padding: 0 0 17px 0;
+}
+
+.dropdown_content p {
+    line-height: 17px;
+}
+
+/*-- /Section 1 - Kittens --*/
 
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
