@@ -1860,7 +1860,7 @@ p.date {
 /*-- Section 1 - Kittens --*/
 
 .two-cols_templ_2 {
-    margin: 2px 0;
+    margin: 2px 0 74px 0;
 }
 
 .two-cols_templ_2 > .left {
@@ -2043,11 +2043,8 @@ p.date {
 
 /*-- /Slick --*/
 
-.two-cols_templ {
-    margin: 0 0 78px 0;
-}
-
-.two-cols_templ h3 {
+.two-cols_templ_2 h2 {
+    font-family: "SF UI Display";
     padding-bottom: 13px;
     font-size: 25px;
     line-height: 32px;
