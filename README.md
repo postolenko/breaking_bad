@@ -5,3 +5,4 @@
 # http://postolenko.github.io/breaking_bad/gatitos_vendidos.html
 # http://postolenko.github.io/breaking_bad/kittens.html
 # http://postolenko.github.io/breaking_bad/production_cards.html
+# http://postolenko.github.io/breaking_bad/news_list.html

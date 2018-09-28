@@ -18,7 +18,7 @@ $(window).resize(function() {
 
 $(document).ready(function() {
 
-	$(".thumbnails_3 .thumb_3").each(function() {
+	$(".thumbnails_3_oddeven .thumb_3").each(function() {
 
 		thumbIndex = $(this).index();
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 	var oddIndex = 0;
 
-	$(".thumbnails_3 .odd").each(function() {
+	$(".thumbnails_3_oddeven .odd").each(function() {
 
 		oddIndex++;
 
