@@ -1851,9 +1851,8 @@ p.date {
 
 /*-- Section 1 - Main Page 2 --*/
 
-section.promo-sect_2 + section {
-    position: relative;
-    z-index: 2;
+.promo_slider_wrapp {
+    overflow: hidden;
 }
 
 .promo_slider .slide {
