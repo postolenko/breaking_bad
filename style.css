@@ -1852,7 +1852,7 @@ p.date {
 /*-- Section 1 - Main Page 2 --*/
 
 .promo_slider {
-    
+    overflow: hidden;
 }
 
 .promo_slider .slide {
