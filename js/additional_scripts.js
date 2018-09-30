@@ -78,7 +78,36 @@ $(document).ready(function() {
         asNavFor: '.big_slider',        
         vertical: true,
         verticalSwiping: true,
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+        {
+          breakpoint:  600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            vertical: false,
+            verticalSwiping: false
+          }
+        },
+        {
+          breakpoint:  500,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            vertical: false,
+            verticalSwiping: false
+          }
+        },
+        {
+          breakpoint:  340,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            vertical: false,
+            verticalSwiping: false
+          }
+        }
+      ]
     });
 
 });

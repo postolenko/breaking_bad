@@ -83,6 +83,11 @@
 
 	/*-- Section 6 - Main Page --*/
 
+	.thumb_3 {
+	    width: 46%;
+	    margin: 15px 2%;
+	}
+
 	.thumb_3 .img-box {
 	    width: 100%;
 	}
@@ -111,19 +116,41 @@
 
 	.thumb_3 .transparent_btn_2 {
 	    bottom: 10px;
+	    left: 5%;
 	}
 
 	.thumbnails_3_oddeven .thumb_3.odd-even .transparent_btn_2 {
-	    left: 20px;
+	    left: 5%;
 	    right: auto;
 	}
 
 	.thumbnails_3_oddeven .thumb_3.odd-even + .thumb_3 .transparent_btn_2 {
-	    left: 20px;
+	    left: 5%;
 	    right: auto;
 	}
 
 	/*-- /Section 6 - Main Page --*/
+
+	/*-- Section 1 - Gatitos Vendidos Page --*/
+
+	.cats-thumbs {
+	    margin: 0 -1%;
+	}
+
+	.cats-thumbs .cat-thumb {
+	    margin: 15px 1%;
+	    width: 31%;
+	}
+
+	/*-- /Section 1 - Gatitos Vendidos Page --*/
+
+	/*-- Section 2 - News Page --*/
+
+	.thumb-4 {
+	    width: 31.33%;
+	}
+
+	/*-- /Section 2 - News Page --*/
 
 	/*-- Footer --*/
 
@@ -309,6 +336,38 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Kittens --*/
+
+	.two-cols_templ_2 > .left {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	.two-cols_templ_2 > .right {
+	    width: 100%;
+	    float: none;
+	    padding: 10px 0;
+	}
+
+	/*-- /Section 1 - Kittens --*/
+
+	/*-- Section 1 - News Page --*/
+
+	.description_3 {
+	    padding: 15px 0 0 0;
+	}
+
+	/*-- /Section 1 - News Page --*/
+
+	/*-- Section 2 - News Page --*/
+
+	.thumb-4 {
+	    width: 48%;
+	}
+
+	/*-- /Section 2 - News Page --*/
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -445,6 +504,18 @@
 
 }
 
+@media only screen and (max-width: 760px) {
+
+	/*-- Section 1 - Gatitos Vendidos Page --*/
+
+	.cats-thumbs .cat-thumb {
+	    width: 48%;
+	}
+
+	/*-- /Section 1 - Gatitos Vendidos Page --*/
+
+}
+
 @media only screen and (max-width: 600px) {
 
 	/*-- Section 3 - Main Page 2 --*/
@@ -478,6 +549,48 @@
 	}
 
 	/*-- /Section 6 - Main Page --*/
+
+	/*-- Section 1 - Kittens --*/
+
+	.cats_slider_wrapp > .left {
+		width: 100%;
+	    float: none;
+	}
+
+	.cats_slider_wrapp > .right {
+	    float: none;
+	    width: 100%;
+	}
+
+	.miniature_slider {
+	    width: 100%;
+	}
+
+	.miniature_slider .slide {
+	    padding: 0 10px;
+	}
+
+	.tags {
+	    margin: -3px;
+	}
+
+	p.tag {
+	    margin: 8px 3px;
+	}
+
+	/*-- /Section 1 - Kittens --*/
+
+	/*-- Section 2 - News Page --*/
+
+	.thumbnails-4 {
+	    margin: 0;
+	}
+
+	.thumb-4 {
+	    width: 100%;
+	}
+
+	/*-- /Section 2 - News Page --*/
 
 	/*-- Footer --*/
 
@@ -524,6 +637,10 @@
 	    margin: 0 0 0 2px;
 	}
 
+	.breadcrumbs li:after {
+	    margin: 0 2px;
+	}
+
 	/*-- /Header --*/
 
 	/*-- Section 1 - Main Page 2 --*/
@@ -552,11 +669,33 @@
 
 	/*-- /Section 4 - Main Page --*/
 
+	/*-- Section 1 - Gatitos Vendidos Page --*/
+
+	.cats-thumbs {
+	    margin: 0;
+	}
+
+	.cats-thumbs .cat-thumb {
+	    width: 100%;
+	}
+
+	/*-- /Section 1 - Gatitos Vendidos Page --*/
+
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 340px) {
 
-	
+	/*-- Section 1 - Kittens --*/
+
+	.big_slider {
+	    margin: 10px 5px;
+	}
+
+	.miniature_slider .slide {
+	    padding: 0 5px;
+	}
+
+	/*-- /Section 1 - Kittens --*/
 
 }
 

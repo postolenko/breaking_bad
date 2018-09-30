@@ -141,7 +141,7 @@ footer {
     order: 3;
     -webkit-order: 3;
     position: relative;
-    z-index: 5;
+    z-index: 2;
 }
 
 .clearfix:after {
@@ -2175,7 +2175,6 @@ p.date {
 
 .miniature_slider {
     width: 159px;
-    height: 390px;
 }
 
 .miniature_slider .slide {
