@@ -123,6 +123,8 @@ header {
     -webkit-order: 2;
     flex-grow: 1;
     -webkit-flex-grow: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .content.inner_page {
