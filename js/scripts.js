@@ -14,7 +14,6 @@ $(window).resize(function() {
 
     getFixedHeader();
     showScrollTopBtn();
-    getPromoSliderWrappHeight();
 
 });
 
@@ -28,7 +27,6 @@ $(document).ready(function() {
 
 	getFixedHeader();
 	showScrollTopBtn();
-	getPromoSliderWrappHeight();
 
 	$(".thumbnails_3_oddeven .thumb_3").each(function() {
 
@@ -171,13 +169,5 @@ function showScrollTopBtn() {
         $(".scroll-top").fadeOut(300);
 
     }
-
-}
-
-function getPromoSliderWrappHeight() {
-
-	$(".promo_slider_wrapp").height({
-		"height" : $(".promo_slider").height() + "px"
-	});
 
 }
