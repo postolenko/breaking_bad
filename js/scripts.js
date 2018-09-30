@@ -7,22 +7,13 @@ bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 var thumbIndex;
 
 $(window).load(function() {
-
-	// getTHumbsHeight();
-
+	getFixedHeader();
 });
 
 $(window).resize(function() {
 
-	// getAdaptivePositionElements();
     getFixedHeader();
     showScrollTopBtn();
-
-    // $(".set_height .inner_desc").css({
-    // 	"height" : "auto"
-    // });
-
-	// getTHumbsHeight();
 
 });
 
@@ -36,7 +27,6 @@ $(document).ready(function() {
 
 	getFixedHeader();
 	showScrollTopBtn();
-	// getAdaptivePositionElements();
 
 	$(".thumbnails_3_oddeven .thumb_3").each(function() {
 
@@ -181,51 +171,3 @@ function showScrollTopBtn() {
     }
 
 }
-
-// function getTHumbsHeight() {
-
-//     $(".set_height").each(function() {
-
-//         thumbsHeightArr = [];
-
-//         thumb = $(this).find(".thumb");
-
-//         thumb.each(function() {
-
-//             thumbHeight = $(this).find(".inner_desc").height();
-
-//             thumbsHeightArr.push(thumbHeight);
-
-//         });
-
-//         maxThumbHeight = Math.max.apply(null, thumbsHeightArr);
-
-//         thumb.find(".inner_desc").height(maxThumbHeight);
-
-//     });
-
-// }
-
-// function getAdaptivePositionElements() {
-
-//     $(".append-elem").each(function() {
-
-//         screenParam = parseInt( $(this).attr("data-min-screen") );
-
-//         indexElem = $(this).attr("data-append-desktop-elem");
-
-//         if( bodyWidth <= screenParam ) {
-
-//             $("[data-append-elem = '"+ indexElem +"']").append($(this).children());
-
-//         }
-
-//          if( bodyWidth > screenParam ) {
-
-//             $("[data-append-desktop-elem = '"+ indexElem +"']").append($("[data-append-elem = '"+ indexElem +"']").children());
-
-//         }
-
-//     });
-
-// }
