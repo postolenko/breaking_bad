@@ -65,6 +65,14 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Main Page --*/
+
+	.h1_wrapp {
+	    left: -16px;
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
 	/*-- Section 2 - Main Page --*/
 
 	.cat_shape {
@@ -330,6 +338,31 @@
 
 	/*-- /Header --*/
 
+	/*-- Section 1 - Main Page --*/
+
+	.promo-sect {
+	    padding: 19px 0 32px 0;
+	    background-image: url(img/promo_bg_resp.jpg);
+	}
+
+	/*-- /Section 1 - Main Page --*/
+
+	/*-- Section 3 - Main Page --*/
+
+	.bg_3 {
+	    background-image: url(img/bg_3_resp.jpg);
+	}
+
+	/*-- /Section 3 - Main Page --*/
+
+	/*-- Section 5 - Main Page --*/
+
+	.bg_4 {
+	    background-image: url(img/bg_4_resp.jpg);
+	}
+
+	/*-- /Section 5 - Main Page --*/
+
 	/*-- Section 1 - Main Page 2 --*/
 
 	.h1_wrapp {
@@ -377,6 +410,26 @@
 
 	/*-- /Section 1 - Main Page 2 --*/
 
+	/*-- Section 5 - Main Page --*/
+
+	.sect-6 {
+	    padding: 12px 0 28px 0;
+	}
+
+	.thumb_2 {
+	    margin: 8px;
+	}
+
+	/*-- /Section 5 - Main Page --*/
+
+	/*-- Section 3 - Main Page 2 --*/
+
+	.bg_6 {
+	    background-image: url(img/bg_6_resp.jpg);
+	}
+
+	/*-- /Section 3 - Main Page 2 --*/
+
 	/*-- Footer --*/
 
 	.scrolltop_wrapp {
@@ -389,14 +442,6 @@
 	}
 
 	/*-- /Footer --*/
-
-	/*-- Section 3 - Main Page 2 --*/
-
-	.bg_6 {
-	    background-image: url(img/bg_6_resp.jpg);
-	}
-
-	/*-- /Section 3 - Main Page 2 --*/
 
 }
 
@@ -434,10 +479,14 @@
 
 	/*-- /Section 6 - Main Page --*/
 
+	/*-- Footer --*/
+
 	.footer .socials_list {
 		display: block;
 		margin-right: 0;
 	}
+
+	/*-- /Footer --*/
 
 }
 
@@ -495,6 +544,13 @@
 
 	/*-- /Section 3 - Main Page 2 --*/
 
+	/*-- Section 4 - Main Page --*/
+
+	h2.h2_bg_3_2 {
+		color: #383439;
+	}
+
+	/*-- /Section 4 - Main Page --*/
 
 }
 

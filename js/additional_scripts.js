@@ -41,13 +41,12 @@ $(document).ready(function() {
                 items:1
             },
             600:{
-                items:4
-
+                items:2
             },
-            992:{
-                items:4
+            890:{
+                items:3
             },
-            1200:{
+            1230:{
                 items:4
             }
         }
