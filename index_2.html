@@ -12,16 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="owl/assets/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
-	<link rel="stylesheet" type="text/css" href="vendors/css/select2.css">
+	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/select2.css"> -->
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
-	<script type="text/javascript" src="vendors/js/jquery.js"></script>
-	<script type="text/javascript" src="owl/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="vendors/js/select2.js"></script>
-	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="icon" type="image/png" href="favicon/favicon.ico" sizes="16x16">
-
 </head>
 
 <body>
@@ -40,16 +34,23 @@
 						<span>BREAKING BAD</span>
 					</a>
 				</div>
-				<div class="left col-2 clearfix">
-					<div class="main-nav_wrapp">
-						<ul class="main-nav">
-							<li><a href="#" class="active">Главная</a></li>
-							<li><a href="#">Котята в наличии</a></li>
-							<li><a href="#">Проданные котята</a></li>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Новости</a></li>
+				<div class="left col-2">
+					<div class="main-nav_wrapp header-nav">
+						<ul class="socials_list">
+							<li><a href=""><i class="instagram"></i></a></li>
+							<li><a href=""><i class="facebook"></i></a></li>
+							<li><a href=""><i class="vk"></i></a></li>
 						</ul>
-					</div>					
+						<div class="scroll">
+							<ul class="main-nav">
+								<li><a href="#" class="active">Главная</a></li>
+								<li><a href="#">Котята в наличии</a></li>
+								<li><a href="#">Проданные котята</a></li>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="left col-3 contacts_wrapp">
 					<ul class="socials_list">
@@ -65,6 +66,13 @@
 						</ul>
 						<a href="#" class="yellow_btn">Задать вопрос</a>
 					</div>
+
+					<button class="respmenubtn">	
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
 				</div>
 			</div>
 		</div>
@@ -76,23 +84,64 @@
 		<!-- Content -->
 			<div class="content">
 
-				<!-- Section 1 - Main Page -->
+				<!-- Section 1 - Main Page 2 -->
 
-				<section class="promo-sect">
-					<div class="row">
-						<div class="promo-descript">
-							<div class="h1_wrapp">
-								<h1>This is Photoshop's version  of Lorem Ipsum. Proin gravida aliquet. Aenean sollicitudin, lorem quis bibendum</h1>
+				<section class="sect-1_2">
+					<div class="promo_slider_wrapp">
+						<div class="promo_slider">
+							<div class="slide">
+								<img class="bg_image descktop_img" src="img/bg_7.jpg" alt="" />
+								<img class="bg_image resp_img" src="img/bg_7_resp.jpg" alt="" />
+								<div class="row">
+									<div class="promo-descript">
+										<div class="h1_wrapp">
+											<h1>This is Photoshop's version  of Lorem Ipsum. Proin gravida aliquet. Aenean sollicitudin, lorem quis bibendum</h1>
+										</div>
+										<div class="inner">
+											<p>nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+										</div>
+										<a href="#" class="yellow_btn">Узнать подробнее</a>
+									</div>
+								</div>
 							</div>
-							<div class="inner">
-								<p>nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+							<div class="slide">
+								<img class="bg_image descktop_img" src="img/bg_7.jpg" alt="" />
+								<img class="bg_image resp_img" src="img/bg_7_resp.jpg" alt="" />
+								<div class="row">
+									<div class="promo-descript">
+										<div class="h1_wrapp">
+											<h1>This is Photoshop's version  of Lorem Ipsum. Proin gravida aliquet. Aenean sollicitudin, lorem quis bibendum 2</h1>
+										</div>
+										<div class="inner">
+											<p>nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+										</div>
+										<a href="#" class="yellow_btn">Узнать подробнее</a>
+									</div>
+								</div>
 							</div>
-							<a href="#" class="yellow_btn">Узнать подробнее</a>
+							<div class="slide">
+								<img class="bg_image descktop_img" src="img/bg_7.jpg" alt="" />
+								<img class="bg_image resp_img" src="img/bg_7_resp.jpg" alt="" />
+								<div class="row">
+									<div class="promo-descript">
+										<div class="h1_wrapp">
+											<h1>This is Photoshop's version  of Lorem Ipsum. Proin gravida aliquet. Aenean sollicitudin, lorem quis bibendum 3</h1>
+										</div>
+										<div class="inner">
+											<p>nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+										</div>
+										<a href="#" class="yellow_btn">Узнать подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="promo_slider_arrows">
+							<div class="row"></div>
 						</div>
 					</div>
 				</section>
 
-				<!-- /Section 1 - Main Page -->
+				<!-- /Section 1 - Main Page 2 -->
 
 				<!-- Section 2 - Main Page -->
 
@@ -290,59 +339,57 @@
 								<h2 class="h2_bg_4">Noticias</h2>
 							</div>
 
-							<div class="overflow_hidden">
-								<div class="thumbnails_3 offset-ziro">
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
-										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+							<div class="thumbnails_3 thumbnails_3_oddeven offset-ziro">
+								<div class="thumb_3 thumb clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
 									</div>
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
-										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet.</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									</div>
+								</div>
+								<div class="thumb_3 thumb clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
 									</div>
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
-										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									</div>
+								</div>
+								<div class="thumb_3 thumb clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
 									</div>
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									</div>
+								</div>
+								<div class="thumb_3 thumb clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
-										</div>
+									</div>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
 									</div>
 								</div>
 							</div>
@@ -359,33 +406,31 @@
 								<h2 class="h2_bg_4">Artículos</h2>
 							</div>
 
-							<div class="overflow_hidden">
-								<div class="thumbnails_3 offset-ziro">
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
-										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+							<div class="thumbnails_3 thumbnails_3_oddeven offset-ziro">
+								<div class="thumb_3 clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
 									</div>
-									<div class="thumb_3 clearfix">
-										<div class="img-box">
-											<div class="inner">
-												<img src="img/cat_3.jpg" alt="" />
-											</div>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
+									</div>
+								</div>
+								<div class="thumb_3 clearfix">
+									<div class="img-box">
+										<div class="inner">
+											<img src="img/cat_3.jpg" alt="" />
 										</div>
-										<div class="descript">
-											<p class="date">12.27.2018</p>
-											<h3>Заголовок новости 1</h3>
-											<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
-											<a href="#" class="transparent_btn_2">Прочитать полностью</a>
-										</div>
+									</div>
+									<div class="descript">
+										<p class="date">12.27.2018</p>
+										<h3>Заголовок новости 1</h3>
+										<p>This is Photoshop's version  of Lorem Ips Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagi sem nibh id elit. Duis sed odio sit amet nivulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor...</p>
+										<a href="#" class="transparent_btn_2">Прочитать полностью</a>
 									</div>
 								</div>
 							</div>
@@ -454,11 +499,18 @@
 		</footer>
 
 		<!-- /Footer -->
-
-		<script src="js/scripts.js"></script>
-		<script src="js/additional_scripts.js"></script>
 	
 	</div>
+
+	<script type="text/javascript" src="vendors/js/jquery.js"></script>
+	<script type="text/javascript" src="owl/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="vendors/js/smoothscroll.js"></script>
+	<!-- <script type="text/javascript" src="vendors/js/select2.js"></script> -->
+	<script type="text/javascript" src="vendors/js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/additional_scripts.js"></script>
 
 </body>
 </html>
