@@ -438,11 +438,11 @@
 	    padding: 0 25px;
 	}
 
-	.promo_slider .slide .resp_img {
+	.promo_slider .bg_wrapp .resp_img {
 	    display: block;
 	}
 
-	.promo_slider .slide .descktop_img {
+	.promo_slider .bg_wrapp .descktop_img {
 		display: none;
 	}
 
